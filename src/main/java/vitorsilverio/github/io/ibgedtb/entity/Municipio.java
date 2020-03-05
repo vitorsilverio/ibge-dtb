@@ -17,7 +17,7 @@ public class Municipio {
     @Column(name="codigo_ibge")
     private Long codigoIBGE;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="estado_id")
     private Estado estado;
 
