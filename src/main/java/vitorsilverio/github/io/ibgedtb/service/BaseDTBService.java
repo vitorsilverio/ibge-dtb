@@ -33,13 +33,6 @@ public class BaseDTBService {
         File planilha = deziparPlanilhaMunicipios(base);
         List<Municipio> municipios = gerarListaMunicipios(planilha);
         municipioRepository.saveAll(municipios);
-        PrintWriter pw = new PrintWriter(new File("municipios.sql"));
-        for(Municipio municipio: municipios){
-            pw.println(String.format("insert into municipio(id,codigo_ibge,estado_id,nome) value (%d, %d, %d, '%s');",municipio.getId(),
-                    municipio.getCodigoIBGE(), municipio.getEstado().getId(), municipio.getNome().replaceAll("'","''")));
-        }
-        pw.flush();
-        pw.close();
     }
 
     private List<Municipio> gerarListaMunicipios(File planilha) throws IOException {
