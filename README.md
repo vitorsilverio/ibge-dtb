@@ -1,6 +1,6 @@
-#ibge-dtb
+# API ibge-dtb 
 
-Esse proejeto tem como missão expor uma API para os códigos de Estado e Município da [Divisão Territorial do Brasil do IBGE](https://www.ibge.gov.br/explica/codigos-dos-municipios.php).
+Esse projeto tem como missão expor uma API para os códigos de Estado e Município da [Divisão Territorial do Brasil do IBGE](https://www.ibge.gov.br/explica/codigos-dos-municipios.php).
 Como esses dados são fornecidos apenas como planilha, esse projeto baixa essa planilha e modela os dados em forma de API.
 
 Para ver as chamadas possísveis acesse:
